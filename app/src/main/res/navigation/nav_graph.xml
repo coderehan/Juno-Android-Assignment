@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homePageFragment">
+
+    <fragment
+        android:id="@+id/emptyStateFragment"
+        android:name="com.rehan.junoandroidassignment.fragments.EmptyStateFragment"
+        android:label="fragment_empty_state"
+        tools:layout="@layout/fragment_empty_state" />
+    <fragment
+        android:id="@+id/valueStateFragment"
+        android:name="com.rehan.junoandroidassignment.fragments.ValueStateFragment"
+        android:label="fragment_value_state"
+        tools:layout="@layout/fragment_value_state" />
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.rehan.junoandroidassignment.fragments.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page">
+        <action
+            android:id="@+id/action_homePageFragment_to_emptyStateFragment"
+            app:destination="@id/emptyStateFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_valueStateFragment"
+            app:destination="@id/valueStateFragment" />
+    </fragment>
+</navigation>
