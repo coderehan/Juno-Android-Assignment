@@ -17,8 +17,6 @@ This app is built in <b>Kotlin</b> with <b>MVVM</b> architecture design pattern 
 6. Coroutines
 7. Data Binding
 8. Navigation Framework
+9. Material Design Components
 
 This app fetches the data from API and dislpays information in empty state and value state.
-
-<h3>Screenshot</h3>
-
